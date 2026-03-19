@@ -1,0 +1,6 @@
+arxiv_url: https://arxiv.org/list/cs.AI/new
+output_dir: output
+log_dir: log
+model: claude-sonnet-4-6
+batch_size: 5
+max_papers: 50

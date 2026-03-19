@@ -1,0 +1,23 @@
+# arXiv AI Daily Digest
+
+## Purpose
+Automated tool that fetches new AI research papers from Cornell's arXiv (cs.AI category),
+generates plain-English summaries using the Claude API, and saves a daily Markdown digest.
+
+## Entry Point
+src/arxiv_digest.py
+
+## Configuration
+config/settings.yaml — controls URL, model, batch size, max papers, output/log dirs
+
+## Key Dependencies
+- anthropic — Claude API client
+- requests + beautifulsoup4 — arXiv scraping
+- PyYAML — config loading
+
+## Output
+- output/ai_digest_YYYY-MM-DD.md — daily digest
+- log/arxiv_digest_YYYY-MM-DD.log — run log
+
+## Environment Variables
+- ANTHROPIC_API_KEY (required)
