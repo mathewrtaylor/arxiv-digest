@@ -12,6 +12,7 @@ import anthropic
 import requests
 import yaml
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -19,6 +20,8 @@ from bs4 import BeautifulSoup
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
+
+load_dotenv(PROJECT_ROOT / ".env")
 CONFIG_PATH = PROJECT_ROOT / "config" / "settings.yaml"
 
 
